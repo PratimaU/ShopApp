@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".MainActivity">
+
+    <ViewSwitcher
+        android:id="@+id/productsCartSwitcherView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomView"
+        android:padding="5dp">
+
+        <fragment
+            android:id="@+id/productsFragment"
+            android:name="com.example.pratima.shopapp.view.ProductsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/cartFragment"
+            android:name="com.example.pratima.shopapp.view.CartFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </ViewSwitcher>
+
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/productsTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Products"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cartTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Cart"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

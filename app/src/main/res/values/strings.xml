@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+
+    <string name="totalPrice">Total Price: %1$d</string>
+    <string name="price">Price: %1$d</string>
+    <string name="cartItemPrice">Price\n%1$d</string>
+</resources>
